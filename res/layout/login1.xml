@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome">
+    
+      
+          <ImageView
+              android:id="@+id/logo"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/usernameT"
+              android:layout_alignParentLeft="true"
+              android:paddingBottom="25dp"
+              android:paddingTop="10dp"
+              android:src="@drawable/logo" />
+    
+          
+          <TextView
+              android:id="@+id/linbelow"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/login"
+              android:layout_alignParentBottom="true"
+              android:layout_marginBottom="20dp"
+              android:layout_centerHorizontal="true"
+              android:gravity="center"
+              android:text="@string/line"
+              android:textColor="#DF0101" />
+
+          <com.example.myfirstgui.library.BootstrapEditText
+              android:id="@+id/passwordT"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/login"
+              bootstrapbutton:be_roundedCorners="true"
+              android:layout_margin="10dp"
+              android:layout_marginBottom="16dp"
+              android:drawableLeft="@drawable/pass"
+              android:drawablePadding="13dp"
+              android:ems="10"
+              android:hint="@string/hint2"
+              android:inputType="textPassword"
+              />
+
+          <com.example.myfirstgui.library.BootstrapEditText
+              android:id="@+id/usernameT"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/passwordT"
+              android:layout_margin="10dp"
+              bootstrapbutton:be_roundedCorners="true"
+              android:drawableLeft="@drawable/mail"
+              android:drawablePadding="11dp"
+              android:ems="10"
+              android:hint="@string/hint"
+               />
+
+          <com.example.myfirstgui.library.BootstrapButton
+              android:id="@+id/reg"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/linbelow"
+             
+              android:layout_margin="10dp"
+              android:text="@string/sign"
+              bootstrapbutton:bb_icon_left="fa-print"
+              bootstrapbutton:bb_roundedCorners="true"
+              bootstrapbutton:bb_type="success" >
+          </com.example.myfirstgui.library.BootstrapButton>
+
+          <TextView
+              android:id="@+id/forgotP"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/reg"
+              android:layout_centerHorizontal="true"
+              android:gravity="center"
+              android:paddingRight="25dp"
+              android:text="@string/forgot"
+              android:textColor="#0000FF" />
+
+          <com.example.myfirstgui.library.BootstrapButton
+              android:id="@+id/login"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/forgotP"
+             
+              android:layout_margin="10dp"
+              android:layout_marginBottom="30dp"
+              android:text="@string/button"
+              bootstrapbutton:bb_icon_left="fa-flask"
+              bootstrapbutton:bb_roundedCorners="true"
+              bootstrapbutton:bb_type="primary" >
+          </com.example.myfirstgui.library.BootstrapButton>
+          
+    
+          
+
+</RelativeLayout>

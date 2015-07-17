@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/login_back_ground"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name" />
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+     
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="Home Location" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/getadress"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="address" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOB" />
+
+        <LinearLayout
+            android:id="@+id/searchlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+         <Spinner
+             android:id="@+id/year"
+             android:layout_width="103dp"
+             android:layout_height="45dp" />
+
+         <Spinner
+             android:id="@+id/month"
+             android:layout_width="86dp"
+             android:layout_height="45dp" />
+
+         <Spinner
+             android:id="@+id/day"
+             android:layout_width="79dp"
+             android:layout_height="45dp" />
+            
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/register_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dip"
+            android:textColor="#e30000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="2dip"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="Already registred. Login Me!"
+            android:textColor="#21dbd4"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+</RelativeLayout>

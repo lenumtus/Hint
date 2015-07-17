@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.community_list_post.MainActivity" >
+    <item
+        android:id="@+id/General"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/General"/>
+        <item
+        android:id="@+id/event"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/Events"/>
+            <item
+        android:id="@+id/crime"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/Crime"/>
+                <item
+        android:id="@+id/Missing"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/Missing"/>
+                    <item
+        android:id="@+id/Market"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/Market"/>
+                        <item
+        android:id="@+id/Jobs"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/Jobs"/>
+                            <item
+        android:id="@+id/Special"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/Specials"/>
+
+
+</menu>

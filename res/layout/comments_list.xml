@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+  
+ <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+
+    
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="8dp" />
+
+     <TextView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="@dimen/rating" />
+    
+    <!-- Genre -->
+
+    <!-- Release Year -->
+
+
+
+     <Button
+         android:id="@+id/btn_addcontact_add"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         android:layout_below="@+id/content"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/imgbutton"
+         android:textSize="@dimen/liketext"
+         android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/promoted"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/btn_addcontact_add"
+          android:layout_alignBottom="@+id/btn_addcontact_add"
+          android:layout_alignLeft="@+id/thumbnail"
+          android:textColor="@color/year"
+          android:textSize="@dimen/year" />
+
+      <TextView
+          android:id="@+id/releaseYear"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/thumbnail"
+           android:layout_toRightOf="@+id/title"
+          android:layout_marginRight="3dp"
+          android:layout_marginLeft="9dp"
+          android:layout_toLeftOf="@+id/btn_addcontact_add"
+          android:textColor="@color/year"
+          android:textSize="@dimen/year" />
+
+     <Button
+         android:id="@+id/comments"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/btn_addcontact_add"
+         android:layout_toRightOf="@+id/title"
+         android:background="@null"
+         android:text="comments"
+         android:textColor="#21dbd4"
+         android:textStyle="bold" />
+
+     <ListView
+         android:id="@+id/listcomments"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/editText1"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/comments"
+         android:layout_marginTop="20dp" >
+
+     </ListView>
+
+     <TextView
+         android:id="@+id/commenttext"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/promoted"
+         android:layout_toLeftOf="@+id/comments"
+         android:text=" See all comments" />
+
+     <EditText
+         android:id="@+id/commentcont"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_toRightOf="@+id/promoted"
+         android:ems="10"
+         android:inputType="textMultiLine" />
+
+     <Button
+         android:id="@+id/submitcomments"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:text="Button" />
+     
+</RelativeLayout>

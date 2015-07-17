@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/curve_corners"
+    android:orientation="vertical" >
+    
+        <TextView
+            android:id="@+id/help_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/title_of_post"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+        <TextView
+            android:id="@+id/first_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/first_help"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+        <TextView
+            android:id="@+id/second_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/second_help"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+        <TextView
+            android:id="@+id/third_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/third_help"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+        <TextView
+            android:id="@+id/fourth_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/fourth_help"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+        <TextView
+            android:id="@+id/fifth_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/fifth_help"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#3E80B4"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:text="Yes"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+
+<!--        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="No"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />-->
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+  android:fillViewport="true">
+  
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/welcome">
+    
+   <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="8dp"
+        android:paddingTop="13dp"
+        android:text="@string/registration"
+        android:textColor="#7DC4D4" />
+    
+     <com.example.community_list_post.library.BootstrapEditText
+              android:id="@+id/registerName"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              bootstrapbutton:be_roundedCorners="true"
+              android:layout_margin="8dp"
+              android:layout_below="@+id/title"
+              android:drawableLeft="@drawable/full"
+              android:drawablePadding="13dp"
+              android:ems="10"
+              android:hint="@string/footer"
+              />
+     
+      <com.example.community_list_post.library.BootstrapEditText
+              android:id="@+id/registerEmail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="8dp"
+              android:layout_below="@+id/registerName"
+              android:digits="0123456789."
+              android:inputType="numberDecimal"
+              android:maxLength="10"
+              bootstrapbutton:be_roundedCorners="true"
+              android:drawableLeft="@drawable/phone"
+              android:drawablePadding="11dp"
+              android:ems="10"
+              android:hint="@string/hint"
+               />
+      
+      <com.example.community_list_post.library.BootstrapEditText
+              android:id="@+id/registerPassword"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              bootstrapbutton:be_roundedCorners="true"
+              android:layout_margin="8dp"
+              android:layout_below="@+id/registerEmail"
+              android:layout_marginBottom="16dp"
+              android:drawableLeft="@drawable/key"
+              android:drawablePadding="13dp"
+              android:ems="10"
+              android:hint="@string/hint2"
+              android:inputType="textPassword"
+              />
+      
+      <com.example.community_list_post.library.BootstrapEditText
+              android:id="@+id/address"
+              android:layout_width="190dp"
+              android:layout_height="wrap_content"
+              bootstrapbutton:be_roundedCorners="true"
+              android:layout_margin="8dp"
+              android:layout_below="@+id/registerPassword"
+              android:layout_marginBottom="16dp"
+              android:drawableLeft="@drawable/home"
+              android:drawablePadding="13dp"
+              android:ems="10"
+              android:hint="@string/address"
+            
+              />
+      
+      <ImageButton
+          android:id="@+id/buttonImg"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="2dp"
+          android:layout_alignBottom="@+id/address"
+          android:layout_alignRight="@+id/registerPassword"
+          android:layout_below="@+id/registerPassword"
+          android:background="?android:selectableItemBackground"
+          android:src="@drawable/location" />
+                
+      
+      <LinearLayout
+          android:id="@+id/lin"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/address"
+          android:layout_marginRight="8dp"
+          android:layout_below="@+id/address"
+          android:background="@drawable/group"
+          android:orientation="vertical" >
+
+          <TextView
+              android:id="@+id/gender"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="15dp"
+              android:paddingTop="13dp"
+              android:text="@string/choose"
+              android:textColor="#1111F5" />
+
+          <RadioButton
+              android:id="@+id/radioButton1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="24dp"
+              android:layout_marginTop="2dp"
+              android:text="@string/male" />
+
+          <RadioButton
+              android:id="@+id/radioButton2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="45dp"
+              android:layout_marginLeft="24dp"
+              android:text="@string/female" />
+      </LinearLayout>
+      
+      <TextView
+	        android:id="@+id/title2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="13dp"
+	        android:layout_below="@+id/lin"
+	        android:paddingTop="13dp"
+	        android:text="@string/date"
+	        android:textColor="#0040FF" />
+      
+      <LinearLayout 
+            android:id="@+id/vertL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/title2"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spy2"
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/spinnerb" />
+
+            <Spinner
+                android:id="@+id/spy1"
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:paddingTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/spinnerb" />
+
+            <Spinner
+                android:id="@+id/spy3"
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/spinnerb" />
+            
+        </LinearLayout>
+      
+      <com.example.community_list_post.library.BootstrapButton
+          android:id="@+id/btnRegister"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/address"
+          android:layout_below="@+id/vertL"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="8dp"
+          android:text="@string/sign2"
+          bootstrapbutton:bb_roundedCorners="true"
+          bootstrapbutton:bb_type="primary" >
+
+      </com.example.community_list_post.library.BootstrapButton>
+
+     <com.example.community_list_post.library.BootstrapButton
+          android:id="@+id/btnLinkToLoginScreen"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/address"
+          android:layout_below="@+id/btnRegister"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="8dp"
+          android:text="Already registred. Login Me!"
+          bootstrapbutton:bb_roundedCorners="true"
+          bootstrapbutton:bb_type="success" >
+
+      </com.example.community_list_post.library.BootstrapButton> 
+          <TextView android:id="@+id/register_error"
+            		android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:textColor="#e30000"
+            		android:padding="10dip"
+            		android:layout_below="@+id/btnRegister"
+            		android:textStyle="bold"/>  
+      <LinearLayout
+                style="?android:buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/btnLinkToLoginScreen"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="130dp"
+                android:background="#B0BFC6"
+                android:gravity="bottom"
+                android:paddingBottom="1dp" >
+
+                
+            </LinearLayout>
+
+</RelativeLayout>
+  
+</ScrollView>

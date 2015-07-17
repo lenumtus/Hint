@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.community_list_post"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name="com.example.community_list_post.app.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+         <uses-library android:name="com.google.android.maps" />
+        
+
+       <activity android:name=".MainActivity"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="stateVisible|adjustResize"
+                  android:theme="@android:style/Theme.Holo.Light">
+            <!-- <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+        
+         <activity android:name=".nointernet"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="stateVisible|adjustResize"
+                  android:theme="@android:style/Theme.Holo.Light">
+            <!-- <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+       
+       
+       
+       
+       
+        <activity
+            android:name=".splashscreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+ 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       
+       
+       
+        <activity
+            android:name=".UploadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Help"
+            android:screenOrientation="portrait" 
+            android:label="Help"
+            android:theme="@android:style/Theme.Holo.Light">
+        </activity>
+           <activity
+            android:name=".editprofileActivity"
+            android:screenOrientation="portrait" 
+            android:label="Your Profile"
+            android:theme="@android:style/Theme.Holo.Light">
+        </activity>
+         <activity
+            android:name="com.example.community_list_post.posting.newpost"
+            android:screenOrientation="portrait" >
+        </activity>
+       
+        <activity
+            android:name=".profilepic"
+            android:label="set your profile pic"
+            android:theme="@android:style/Theme.Holo.Light"
+             >
+            <intent-filter>
+
+            </intent-filter>
+        </activity>
+        
+        
+        
+        <activity
+            android:name=".postactivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light"
+             >
+            <intent-filter>
+
+            </intent-filter>
+        </activity>
+        
+        
+                <!--  Login Activity -->
+        <activity
+            android:label="Login Account" 
+            android:name=".LoginActivity"
+            
+                  android:theme="@android:style/Theme.Holo.Light"></activity>
+
+        <!--  Register Activity -->
+        <activity
+            android:label="Register New Account" 
+            android:name=".RegisterActivity"
+             android:windowSoftInputMode="stateVisible|adjustResize"
+             android:theme="@android:style/Theme.Holo.Light">
+            </activity>
+        
+        
+
+                
+        <activity
+            android:name="com.example.community_list_post.MainFragmentActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo">
+        </activity>
+                <activity
+            android:name="com.example.community_list_post.localisation.localisationActivity"
+            android:label="@string/title_activity_main"
+             android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        
+                  <activity
+            android:name="com.example.community_list_post.localisation.listbusiness"
+            android:label="@string/title_activity_main"
+             android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+                
+                  <activity
+            android:name="com.example.community_list_post.localisation.wheelpic.categorybusiness"
+            android:label="@string/title_activity_main"
+             android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+                   
+         <activity
+            android:name="com.example.community_list_post.listcomments"
+            android:label="comments"
+             android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+          <activity
+            android:name="com.example.community_list_post.BusinessProfile"
+            android:label="Business Profile"
+             android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <!-- SinglePlaceActivity -->
+        <activity android:name="com.example.community_list_post.localisation.SinglePlaceActivity" android:label="Place Details">
+		</activity>
+        
+        <!-- PlacesMapActivity -->
+        <activity android:name="com.example.community_list_post.localisation.PlacesMapActivity" android:label="Near Places Map View">
+		</activity>
+                
+                <!-- Register MyService -->
+        <service
+            android:name="com.example.community_list_post.database.synch_service"
+         />
+                <service
+            android:name="com.example.community_list_post.database.localisationservice"
+         />
+
+    </application>
+
+</manifest>

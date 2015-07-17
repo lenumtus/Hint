@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+   xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+   android:fillViewport="true">
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:id="@+id/releTive"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/welcome" >
+    
+   <FrameLayout 
+        android:id="@+id/fram"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="12dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/welcome">
+
+       <ImageView
+           android:id="@+id/logo"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_marginLeft="112dp"
+           android:src="@drawable/h" />
+       
+       <TextView 
+           android:id="@+id/myID"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="100dp"
+           android:gravity="center"
+           android:text="@string/hw"
+           android:textColor="#333399"/>
+       
+       <TextView 
+           android:id="@+id/myID2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="22dp"
+           android:layout_marginTop="129dp"
+           android:text="@string/tel"
+           android:textColor="#6E6E6E"/>
+       
+       <TextView 
+           android:id="@+id/myID3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="22dp"
+           android:layout_marginTop="149dp"
+           android:text="@string/sup"
+           android:textColor="#6E6E6E"/>
+       
+       <TextView 
+           android:id="@+id/myID4"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="22dp"
+           android:layout_marginTop="169dp"
+           android:text="@string/ad"
+           android:textColor="#6E6E6E"/>
+       
+       <TextView 
+           android:id="@+id/myID5"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="22dp"
+           android:layout_marginTop="189dp"
+           android:text="@string/add2"
+           android:textColor="#6E6E6E"/>
+       
+       <TextView 
+           android:id="@+id/myID6"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="22dp"
+           android:layout_marginTop="217dp"
+           android:text="@string/subject"
+           android:textColor="#6E6E6E"/>
+       
+       <com.example.community_list_post.library.BootstrapEditText
+              android:id="@+id/subject"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              bootstrapbutton:be_roundedCorners="true"
+              android:layout_marginTop="239dp"
+              android:layout_marginLeft="22dp"
+              android:layout_marginRight="22dp"
+              android:ems="10"/>
+
+       <com.example.community_list_post.library.BootstrapEditText
+           android:id="@+id/subject2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="22dp"
+           android:layout_marginRight="22dp"
+           android:layout_marginTop="279dp"
+           
+           android:ems="10"
+           android:minLines="4"
+           android:maxLines="4"
+           android:lines="4"
+           android:hint="@string/share"
+           bootstrapbutton:be_roundedCorners="true" />
+       
+       <com.example.community_list_post.library.BootstrapButton
+           android:id="@+id/btnSend"
+           android:layout_width="107dp"
+           android:layout_height="55dp"
+           android:layout_marginBottom="40dp"
+           android:layout_marginLeft="22dp"
+           android:layout_marginRight="22dp"
+           android:layout_marginTop="380dp"
+           android:layout_gravity="right"
+           android:text="@string/ok"
+           bootstrapbutton:bb_roundedCorners="true"
+           bootstrapbutton:bb_type="success" >
+       </com.example.community_list_post.library.BootstrapButton>
+       
+       <LinearLayout
+            style="?android:buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:layout_marginTop="45dp"
+            android:layout_gravity="bottom"
+            android:background="#B0BFC6"
+            android:gravity="bottom" >
+
+           <TextView
+               android:id="@+id/txtText"
+               android:layout_width="match_parent"
+               android:layout_height="34dp"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:text="@string/line"
+               android:textColor="#FA5858" />
+            
+        </LinearLayout>
+
+       
+       
+    </FrameLayout>
+    
+   
+       
+</RelativeLayout>
+</ScrollView>
